@@ -142,7 +142,7 @@ GET api/siparisler/detay/1 HTTP/1.1
 Cevap
 ```json
 HTTP/1.1 200 OK
-Server: My RESTful API
+Server: localhost
 Content-Type: application/json
 Content-Length: xy
 
@@ -184,7 +184,7 @@ GET /api/siparisler/siparislerim HTTP/1.1
 Cevap
 ```json
 HTTP/1.1 200 OK
-Server: My RESTful API
+Server: localhost
 Content-Type: application/json
 Content-Length: xy
 
@@ -254,7 +254,7 @@ Content-Length: xy
 **Failed Response:**
 ```json
 HTTP/1.1 404 Cannot be found
-Server: My RESTful API
+Server: localhost
 Content-Type: application/json
 Content-Length: xy
 
