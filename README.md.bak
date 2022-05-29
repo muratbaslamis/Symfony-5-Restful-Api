@@ -2,6 +2,7 @@ Symfony 5 Restful api
 
 Gereksinimler;
 
+PHP 8.1.6
 Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6, phpMyAdmin 5.2.0, OpenSSL 1.1.1
 
 
