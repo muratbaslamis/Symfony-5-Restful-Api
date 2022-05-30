@@ -9,6 +9,32 @@ Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.6, phpMyAdmin 5.2.0, OpenSSL 1.1.1
 -  <a href="https://www.getpostman.com/collections/bca9652c9b479fa2abb6" target="_blank"> Postman Collection </a>
 
 
+Kayıt Olma
+
+İstek
+
+```json
+POST /register HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Content-Length: xy
+
+{
+    "username":"muratbaslamis",
+    "password":"testsifre"
+}
+```
+
+Cevap:
+
+```json
+
+{
+"status": "Başarılı şekilde kayıt oldunuz"
+}
+``` 
+
+
 Token Alma
 
 İstek

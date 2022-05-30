@@ -24,6 +24,20 @@ class AuthController extends AbstractController
     }
 
 
+    public function register(Request $request)
+    {
+        $request = $this->responseService->transformJsonBody($request);
+        $username = $request->get('username');
+        $password = $request->get('password');
+
+        if (empty($username)|| empty($password) ){
+            return $this->responseService->respondValidationError("Kullanıcı Adı veya Parola geçersiz.");
+        }
+
+        $this->userRepository->addUser($username, $password);
+
+        return $this->responseService->respondWithSuccess('Kullanıcı başarılı bir şekilde eklendi.');
+    }
 
     /**
      * @param UserInterface $user
